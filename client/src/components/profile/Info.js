@@ -41,7 +41,7 @@ const Info = () => {
             </div>
             
             <h6>
-              {user.firstname} <span className="text-danger">{user.mobile}</span>
+              {user.firstname} {user.lastname}<span className="text-danger pl-2">{user.mobile}</span>
             </h6>
             <p className="m-0">{user.address}</p>
             <h6>{user.email}</h6>

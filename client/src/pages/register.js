@@ -36,7 +36,7 @@ const Register = () => {
   };
   return (
     <div className="auth_page">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="register">
         <h3 className="text-uppercase text-center mb-4">U-Social-Network</h3>
         <div className="form-group">
           <label htmlFor="fullname">First Name</label>
@@ -54,6 +54,19 @@ const Register = () => {
           </small>
         </div>
         <div className="form-group">
+          <label htmlFor="lastname">Last Name</label>
+          <input
+            type="text"
+            className="form-control"
+            id="lastname"
+            onChange={handleChangeInput}
+            value={lastname}
+            name="lastname"
+            style={{background:`${alert.fullname ? "#fd2d6a14" : ""}`}}
+          />
+         
+        </div>
+        <div className="form-group">
           <label htmlFor="username">User Name</label>
           <input
             type="text"
@@ -68,6 +81,7 @@ const Register = () => {
           {alert.username ? alert.username : ""}
           </small>
         </div>
+        
         <div className="form-group">
           <label htmlFor="exampleInputEmail1">Email address</label>
           <input
@@ -85,6 +99,34 @@ const Register = () => {
             
           </small>
         </div>
+        <div className="form-group">
+          <label htmlFor="mobile">Phone No.</label>
+          <input
+            type="Number"
+            className="form-control"
+            id="mobile"
+            onChange={handleChangeInput}
+            value={mobile}
+            name="mobile"
+           
+          />
+          
+        </div>
+        <div className="form-group">
+          <label htmlFor="address">Address</label>
+          <textarea
+            
+            className="form-control"
+            id="address"
+            onChange={handleChangeInput}
+            value={address}
+            name="address"
+            style={{background:`${alert.fullname ? "#fd2d6a14" : ""}`}}
+          />
+          
+  </div>
+        
+
         <div className="form-group">
           <label htmlFor="exampleInputPassword1">Password</label>
           <div className="pass">

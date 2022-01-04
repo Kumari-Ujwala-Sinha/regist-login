@@ -42,7 +42,7 @@ const Search = () => {
           setSearch(e.target.value.toLowerCase().replace(/ /g, ""))
         }
       />
-      <button type="submit" style={{display:"none"}}>Search</button>
+      <button type="submit" style={{display:"none"}}>Press Enter to Search</button>
       
       {load && <img src={Loadicon} alt="loading" className="loading"/>}
 

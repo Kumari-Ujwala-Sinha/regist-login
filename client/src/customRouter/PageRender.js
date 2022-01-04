@@ -9,7 +9,7 @@ const generatePage = (pageName) => {
     try {
         return React.createElement(component())
     } catch (err) {
-        return <NotFound />
+        return ""
     }
 }
 

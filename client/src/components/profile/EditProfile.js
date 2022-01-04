@@ -7,13 +7,14 @@ import { updateProfileUser } from "../../redux/actions/profileAction";
 const EditProfile = ({  setOnEdit }) => {
   const initState = {
     firstname: "",
+    lastname:"",
     gender: "",
     address: "",
     
     mobile: "",
   };
   const [userData, setUserData] = useState(initState);
-  const { firstname, address, mobile, gender } = userData;
+  const { firstname, address, mobile, gender, lastname } = userData;
   const [avatar, setAvatar] = useState("");
   const { auth, theme } = useSelector((state) => state);
   const dispatch =useDispatch()
@@ -83,6 +84,20 @@ const EditProfile = ({  setOnEdit }) => {
             >
               {firstname.length}/25
             </small>
+          </div>
+        </div>
+        <div className="form-group">
+          <label htmlFor="lastname">Last Name</label>
+          <div className="position-relative">
+            <input
+              name="lastname"
+              id="lastname"
+              value={lastname}
+              onChange={handleInput}
+              className="form-control"
+              type="text"
+            />
+           
           </div>
         </div>
         <div className="form-group">
