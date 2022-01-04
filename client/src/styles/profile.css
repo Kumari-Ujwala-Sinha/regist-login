@@ -1,0 +1,127 @@
+
+.info{
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+.info_container{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info_container .info_content{
+    max-width: 400px;
+    min-width: 200px;
+    width:100%;
+    flex: 1;
+    opacity: 0.7;
+    margin: 0 15px;
+
+}
+
+.info_container .info_content .info_content_title{
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: baseline;
+}
+
+.info_container .info_content .info_content_title h2{
+    font-size: 2rem;
+    font-weight: 400;
+    flex: 3;
+}
+
+.info_container .info_content .info_content_title button{
+    flex: 2;
+}
+
+.info_container .info_content .follow_btn span{
+    color: teal;
+    cursor: pointer;
+    
+}
+
+.info_container .info_content .follow_btn span:hover{
+    text-decoration: underline;
+}
+
+.edit_profile{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background: rgb(175, 170, 170);
+    z-index: 9;
+    height:100vh;
+    overflow: auto;
+}
+
+.edit_profile form{
+    max-width: 450px;
+    width: 100%;
+   padding: 20px;
+    margin:20px auto;
+    background: white;
+}
+
+.edit_profile .btn-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.edit_profile .info_avatar{
+    width:150px;
+    height: 150px;
+    overflow: hidden;
+    margin:15px auto;
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+.edit_profile .info_avatar img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.edit_profile .info_avatar span{
+    position: absolute;
+    bottom:-100% ;
+    left: 0;
+   
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    color: orange;
+    transition: 0.3s ease-in-out;
+    background: #fff5;
+    
+
+}
+
+.edit_profile .info_avatar:hover span{
+    bottom: -15%;
+}
+
+.edit_profile .info_avatar #file-up{
+    position: absolute;
+    bottom:0 ;
+    left: 0;
+   
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+::-webkit-file-upload-button{
+    cursor: pointer;
+}
